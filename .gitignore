@@ -1,0 +1,11 @@
+# data and caches are rebuilt by the notebooks
+data/
+cache/
+*.zip
+
+# Python / editors
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
