@@ -1,13 +1,13 @@
-from shop_common import build_texts, load_wands, ndcg, recall
+from shop_common import load_data, make_texts, ndcg, recall
 
-products, queries, labels, qrels, query_text = load_wands()
-print(f"{len(products):,} products | {len(queries)} queries | {len(labels):,} labels")
+products, queries, labels, qrels, query_text = load_data()
+print(len(products), "products,", len(queries), "queries,", len(labels), "labels")
+print()
+print(make_texts(products.head(1))["rich"][0])
+print()
 
-print("\nexample product as the index sees it:\n")
-print(build_texts(products.head(1))["rich"][0])
-
+# small test of the metrics
 rel = {10: 2, 11: 1, 12: 0}
-assert ndcg([10, 11, 12], rel) == 1.0
-assert ndcg([12, 11, 10], rel) < 1.0
-assert recall([10], rel) == 1.0
-print("\nmetrics OK")
+print(ndcg([10, 11, 12], rel))  # 1.0
+print(ndcg([12, 11, 10], rel))  # less than 1
+print(recall([10], rel))        # 1.0
