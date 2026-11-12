@@ -59,7 +59,7 @@ The top 8 products go to a local LLM (`qwen2.5:3b` via Ollama), which recommends
 Paired bootstrap (95% CI): Exact picks **+0.097 [0.043, 0.154]**, real. Exact-or-Partial picks
 +0.015 [-0.024, 0.055], not distinguishable from zero.
 
-### What I learned
+### 
 - v2 recommends more products that humans labelled **Exact**. Part of that comes from the better
   retrieval, so I cannot say how much is the prompt or the JSON format: v1 and v2 differ in
   retrieval, product text and answer format at the same time.
