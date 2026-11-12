@@ -1,0 +1,10 @@
+,v1,v2
+ndcg@10,0.7,0.736
+judged@10,0.842,0.868
+made-up ids,0.004,0.075
+no picks,0.0,0.106
+sec,4.313,2.882
+picks exact,0.404,0.512
+picks relevant,0.857,0.883
+faithful,0.956,0.839
+sec p95,5.3,4.0

@@ -1,0 +1,11 @@
+{
+  "python": "3.13.16",
+  "ollama": "0.6.3",
+  "pandas": "2.2.3",
+  "models": {
+    "qwen2.5:7b": "845dbda0ea48",
+    "qwen2.5:3b": "357c53fb659c"
+  },
+  "products shown": 8,
+  "dev queries": 160
+}
